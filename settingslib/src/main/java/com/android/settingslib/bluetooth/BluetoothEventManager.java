@@ -127,8 +127,9 @@ public final class BluetoothEventManager {
 
     // set bluetooth default name
     private void setDefaultBtName() {
-        String name = mContext.getResources().getString(
-            com.android.internal.R.string.def_custom_bt_defname);
+//        String name = mContext.getResources().getString(
+//            com.android.internal.R.string.def_custom_bt_defname);
+        String name="";
         Log.d(TAG, "custom bluetooth name: " + name);
         if (!TextUtils.isEmpty(name)) {
             mLocalAdapter.setName(name);
